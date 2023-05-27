@@ -1,19 +1,12 @@
 import './App.scss';
-import navbar from "./components/navbar/navbar"
+import Navbar from './components/Navbar/Navbar'
 
-
-
-
-function arshResume(){
-  return(
-<div className="app">
-<navbar/>
-</div>
+function App() {
+  return (
+    <div className="App">
+     <Navbar/>
+    </div>
   );
 }
 
-function introPage(){
-
-}
-
-export default arshResume;
+export default App;
