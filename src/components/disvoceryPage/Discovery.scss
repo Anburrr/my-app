@@ -1,0 +1,53 @@
+.title{
+    margin-top: 60px;
+    color: white;
+    font-size: 5vh;
+}
+
+.introLine {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+  }
+
+  .projectsbigDiv{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  line{
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-style: inset;
+    border-width: 1px;
+    width: 50%;
+    margin-left: auto;
+  }
+
+  .projectInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+
+  .button{
+    margin: 0;
+    color: white;
+  }
+
+  a{
+    text-decoration: none !important;
+  }
+
+  .type{
+    color: white;
+    margin: 0;
+  }

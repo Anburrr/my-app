@@ -4,25 +4,17 @@ import './Intro.scss'
 function Intro(){
     return(
         <>
-               <div className="sidewaysDiv">
-        <div class="sidebars">
-                <div class="scroll">
-                    <a class="rotate" href="">━━━━━━━━━━━━━━━━━━Arsh Bakhshi</a>
-                </div>
-            </div>
-            </div>
-
         <div class="intro">
  
-            <div class="nameIntro-Class">
+            <div class="animation">
                 <p class="nameIntro">Hi my name is,</p>
-            </div>
+  
 
-
-            <div class="wrapper four">
+                <div className='animation2'>
                 <div class="type">
                     <p class="typing">Arsh Bakhshi</p>
                 </div>
+            </div>
             </div>
             <div class="name-Class">    </div>
 
@@ -44,7 +36,7 @@ function Intro(){
 
         <div class="openContainer">
                 <div class="container">
-                    <a href="">
+                    <a href="#projectPage">
                         <div class="scroll-down"></div>
                     </a>
                 </div>
