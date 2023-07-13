@@ -46,11 +46,6 @@ position: fixed;
   --speed: 500ms;
 }
 
-.navbar{
-  margin: 0px !important;
-  padding: 0 !important;
-}
-
 .images{
   width: 100%;
   height: auto;
@@ -86,6 +81,11 @@ position: fixed;
   width: calc(var(--nav-size) * 0.8);
   display: flex;
   align-items: center;
+}
+
+nav{
+  display: flex;
+  margin: 0px;
 }
 
 /* Icon Button */

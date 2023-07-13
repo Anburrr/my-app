@@ -12,8 +12,7 @@ function Discovery() {
           <hr className="introLine"></hr>
 
           <Experience detail="sadasdadasdasd" />
-          <Experience detail = "we done school NIGGGAAAA"/>
-          <Experience />
+          <Experience detail = "we done school G"/>
           <Experience />
           <Experience />
           <Experience />

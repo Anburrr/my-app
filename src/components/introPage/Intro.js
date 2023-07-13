@@ -7,15 +7,13 @@ function Intro(){
         <div class="intro">
  
             <div class="animation">
-                <p class="nameIntro">Hi my name is,</p>
-  
+                <p class="nameIntro">Hi my name is..</p>
+  </div>
 
-                <div className='animation2'>
-                <div class="type">
+                <div class="animation2">
                     <p class="typing">Arsh Bakhshi</p>
                 </div>
-            </div>
-            </div>
+   
             <div class="name-Class">    </div>
 
             <div class="textIntro-Class">

@@ -1,8 +1,23 @@
 .title{
-    margin-top: 60px;
+    margin-top: 50px;
     color: white;
     font-size: 5vh;
+    animation: slide-left 5s;
 }
+
+@keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
 
 .introLine {
     display: block;
@@ -36,6 +51,7 @@
     width: 50%;
     margin-left: auto;
     margin-bottom: 10px;
+    align-items: center;
   }
 
   .button{
@@ -49,5 +65,4 @@
 
   .type{
     color: white;
-    margin: 0;
   }

@@ -1,16 +1,62 @@
+.Footer{
 
+    width: 90%;
+    margin: 0 auto;
 
-a{
-    margin: 0;
-    color: white;
-    text-decoration: none;
-    font-size: 2.25vh;
 }
 
-p{
-    color: white;
-    margin: 0;
-    font-size: 2.25vh;
+.LogoSide{
+    width: 30%;
+}
+
+.mainFooter{
+    display: flex;
+    flex-direction:row ;
+    gap: 150px;
+
+
+    padding: 150px;
+    background-color: rgb(170, 156, 156);
+    border-radius: 10px;
+}
+
+.footerLogo{
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.legalRights{
+    font-size: 1.6vh;
+    opacity: 80%;
+    margin-top: 9px;
+}
+
+.bold{
+font-size: 1.6vh;
+font-weight: 700;
+}
+
+.madeBy{
+    font-size: 1.6vh;
+    margin-top: 7px;
+}
+
+.pageTitle{
+    text-decoration: underline;
+    font-size: 1.85vh;
+    
+}
+
+.redirectColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.redirectText{
+    font-size: 1.85vh;
 }
 
 .button{
@@ -50,7 +96,7 @@ p{
     padding: 0;
     font-size: inherit;
     font-family: inherit;
-    &.learn-more {
+    &.learnMore {
       width: 12rem;
       height: auto;
       .circle {
@@ -60,7 +106,7 @@ p{
         margin: 0;
         width: 3rem;
         height: 3rem;
-        background: blue;
+        background: black;
         border-radius: 1.625rem;
         .icon {
           @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
@@ -128,4 +174,28 @@ p{
       align-self: center;
       justify-self: center;
     }
+
+    .contactText{
+        margin-bottom: 30px;
+    }
   
+    .redirectText {
+        --c: #1095c1; /* the color */
+        --s: .15em;
+        
+        line-height:1.1em;
+        padding-bottom: calc(2.1*var(--s));
+        background: 
+          conic-gradient(from 135deg at top,var(--c) 90deg,#0000 0) 
+            left 0 bottom var(--s)/calc(2*var(--s)) var(--s) repeat-x,
+          conic-gradient(from -45deg at bottom,var(--c) 90deg,#0000 0) 
+            left var(--s) bottom 0/calc(2*var(--s)) var(--s) repeat-x;
+        -webkit-mask:
+          linear-gradient(#000 0 0) content-box,
+          linear-gradient(#000 0 0) 0/var(--_p,0%) padding-box no-repeat;
+        transition: 1s;
+      }
+      .redirectText:hover {
+        --_p: 100%;
+        color: var(--c);
+      }

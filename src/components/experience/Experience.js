@@ -17,15 +17,20 @@ export default function Experience(props) {
           marginTop:"20px"
         }}
       >
-        <a
-          className="button"
-          href=""
-          style={{ margin: 0, color: "white", textDecoration: "none", fontSize: '2.25vh'}}
-        >
-          Soon...
-          {/* {props.detail} */}
-        </a>
-        <p className="type" style={{ color: "white", margin: "0", fontSize: "2.25vh" }}>
+
+
+<div id="container">
+  <button class="learn-more">
+    <span class="circle" aria-hidden="true">
+      <span class="icon arrow"></span>
+    </span>
+    <span class="button-text">Soon... 
+    {/* {props.detail} */}
+    </span>
+  </button>
+</div>
+
+        <p className="type">
           Web Developer
         </p>
       </div>
