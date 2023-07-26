@@ -1,20 +1,20 @@
 import './App.scss';
-import Navbar from './components/navbar/BiggerNav'
-import Intro from './components/introPage/Intro'
-import Discovery from './components/disvoceryPage/Discovery';
-import AnimCursor from './components/cursor/AnimCursor';
-import Footer from './components/footer/Footer';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import HomePage from './Pages/Home/HomePage';
+import Contact from './Pages/contactPage/Contact';
+import Resume from './Pages/Reums/Resume';
 
 function App() {
   return (
     <>
-    <div className="App">
-     <Navbar/>
-     <Intro/>
-     <Discovery/>
-     <AnimCursor/>
-     <Footer/>
-    </div>
+          <BrowserRouter>
+        <Routes>
+              <Route path="/" element={<HomePage />}  /> 
+
+          <Route path="/resume" element={<Resume/>} /> 
+          <Route path="/contact" element={<Contact/>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

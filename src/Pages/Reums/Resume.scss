@@ -1,0 +1,63 @@
+.resumePage{
+    margin: 0 auto;
+    width: 70%;
+    background-color: #d5FFFF;
+    border-radius: 15px;
+    padding: 2px;
+    margin-top: 200px;
+
+}
+
+.resumeText p {
+
+    font-family: 'Oswald';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    width: 15ch;
+    border-right: 4px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+    margin: 30px;
+    text-transform: uppercase;
+
+}
+
+.lookTag p{
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    color: black;
+    width: 30ch;
+    border-right: 4px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+    margin-left: 30px;
+    margin-bottom: 10px;
+
+}
+
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.resumeIMG{
+    width: 70%;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+
+}

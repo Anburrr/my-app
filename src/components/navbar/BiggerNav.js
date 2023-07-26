@@ -11,15 +11,17 @@ import Github from "../../assets/images/github.png"
 import linktree from "../../assets/images/linktree.png"
 import resume from "../../assets/images/resume.png"
 
+import { BrowserRouter  as Router, Routes, Route, Link} from "react-router-dom";
+
 function BiggerNav() {
   return (
     <>
         <div className="biggerBox">
           <div className="box">
             <div className="textboxDiv">
-              <a href="">
+             <Link to='/'>
                 <img className="myLogo" src={logo} />
-              </a>
+              </Link>
 
 <Navbar>
       <NavItem icon={Hamburger}>
@@ -96,7 +98,7 @@ function DropdownMenu() {
           <DropdownItem
             leftIcon=<img className="resume" src={resume}/>
             goToMenu="settings">
-            My Resume
+           Pages
           </DropdownItem>
           <DropdownItem
             leftIcon=<img className="linktree" src={linktree}/>
@@ -115,13 +117,11 @@ function DropdownMenu() {
         onEnter={calcHeight}>
         <div className="menu">
           <DropdownItem goToMenu="main" leftIcon= <img className="resume" src={resume}/>>
-            <h2>My Resume</h2>
+            <h2>Pages</h2>
           </DropdownItem>
-          <DropdownItem leftIcon =<img className="propIcon" src={Hamburger}/>>HTML</DropdownItem>
-          <DropdownItem leftIcon=<img className="propIcon" src={Hamburger}/>>CSS</DropdownItem>
-          <DropdownItem leftIcon=<img className="propIcon" src={Hamburger}/>>JavaScript</DropdownItem>
-          <DropdownItem leftIcon=<img className="propIcon" src={Hamburger}/>>Awesome!</DropdownItem>
-        </div>
+          <DropdownItem leftIcon =<img className="propIcon" src={Hamburger}/>><Link to='/resume'>My Resume</Link></DropdownItem>
+                <DropdownItem leftIcon =<img className="propIcon" src={Hamburger}/>><Link to='/'>Home</Link></DropdownItem>
+      </div>
       </CSSTransition>
 
       <CSSTransition
@@ -134,10 +134,10 @@ function DropdownMenu() {
           <DropdownItem goToMenu="main" leftIcon=<img className="linktree" src={linktree}/>>
             <h2>My Links</h2>
           </DropdownItem>
-          <DropdownItem leftIcon=<img className="propIcon" src={Instagram}/>>Instagram</DropdownItem>
-          <DropdownItem leftIcon=<img className="propIcon" src={Twitter}/>>Twitter</DropdownItem>
-          <DropdownItem leftIcon=<img className="github" src={Github}/>>Github?</DropdownItem>
-          <DropdownItem leftIcon=<img className="linkedin" src={Linkedin}/>>Linkedin</DropdownItem>
+          <DropdownItem leftIcon=<img className="propIcon" src={Instagram}/>><a href="https://www.instagram.com/">Instagram</a></DropdownItem>
+          <DropdownItem leftIcon=<img className="propIcon" src={Twitter}/>><a href="https://twitter.com/Anba786">Twitter</a></DropdownItem>
+          <DropdownItem leftIcon=<img className="github" src={Github}/>><a href="https://github.com/Anburrr"></a>Github</DropdownItem>
+          <DropdownItem leftIcon=<img className="linkedin" src={Linkedin}/>><a href="/"></a></DropdownItem>
         </div>
       </CSSTransition>
     </div>

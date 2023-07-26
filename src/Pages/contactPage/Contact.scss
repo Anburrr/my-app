@@ -1,0 +1,141 @@
+.Footer{
+
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.LogoSide{
+    width: 30%;
+}
+
+.mainFooter{
+    display: flex;
+    flex-direction:row ;
+    gap: 150px;
+
+
+    padding: 150px;
+    background-color: rgb(170, 156, 156);
+    border-radius: 10px;
+}
+
+.footerLogo{
+    width: 85%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.legalRights{
+    font-size: 1.6vh;
+    opacity: 80%;
+    margin-top: 9px;
+}
+
+.bold{
+font-size: 1.6vh;
+font-weight: 700;
+}
+
+.madeBy{
+    font-size: 1.6vh;
+    margin-top: 7px;
+}
+
+.pageTitle{
+    text-decoration: underline;
+    font-size: 1.85vh;
+    
+}
+
+.redirectColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+  
+ 
+.redirectText:hover {
+ 
+    font-size: 1.85vh;
+    color: white;
+  }
+
+.redirectText{
+
+    font-size: 1.85vh;
+    color: white;
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #33b4df; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .5s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+
+    
+ 
+  .redirectText:hover {
+    --_p: 100%;
+    color: var(--c);
+  }
+
+  .contactInfo{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  form{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 0px !important;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    
+  }
+
+  form input, form textarea{
+    border: 0;
+    margin: 16px 0;
+    padding: 20px;
+    outline: none;
+    background-color: rgb(220, 212, 212);
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Oswald';
+    font-weight: 300;
+  }
+
+  form button{
+    padding: 20px;
+    outline: none;
+    border-radius: 30px;
+    background-color: rgb(196, 77, 40);
+    width: 30%;
+    margin: 0 auto;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  
+
+  form h3{
+    color: #555;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }

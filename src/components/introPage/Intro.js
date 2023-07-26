@@ -1,10 +1,14 @@
 import React from 'react';
 import './Intro.scss'
+import Instagram from "../../assets/images/instagram-logo.png";
+import Twitter from "../../assets/images/twitter.png"
+import Github from "../../assets/images/github.png"
+import { BrowserRouter  as Link} from "react-router-dom";
 
 function Intro(){
     return(
         <>
-        <div class="intro">
+        <div class="intro" id='Intro'>
  
             <div class="animation">
                 <p class="nameIntro">Hi my name is..</p>
@@ -24,10 +28,39 @@ function Intro(){
                 <p class="personInfo">I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at</p>
             </div>
 
+            {/* <div className='buttonPage'>
             <div class="btn-holder">
                 <button class="btn btn-2 hover-slide-right">
                     <span>Check Out My Resume!</span>
                 </button>
+
+            <div className='quickLinks'>
+            <a className='IGTag' href='https://www.instagram.com/'><img className='IGPhoto' src={Instagram}/></a>
+            <a className='TTTag' href='https://twitter.com/Anba786'> <img className='TTPhoto' src={Twitter}/></a>
+            <a className='GHTAG' href='https://github.com/Anburrr'><img className='GHPhoto' src={Github}/></a>
+            </div>
+            </div>
+
+
+            </div> */}
+
+      <div className='allButtons'>
+        <div class="btn-holder">
+                <button class="btn btn-2 hover-slide-right">
+                    
+                    
+                    <span>Check Out My Resume!</span>
+                    
+                </button>
+                </div>
+            
+            <div className='iconIMG'>
+            <a className='Tag' href='https://www.instagram.com/'><img className='IGPhoto' src={Instagram}/></a>
+            <a className='Tag' href='https://twitter.com/Anba786'> <img className='TTPhoto' src={Twitter}/></a>
+            <a className='Tag' href='https://github.com/Anburrr'><img className='GHPhoto' src={Github}/></a>
+            </div>
+    
+
             </div>
         </div>
 
