@@ -1,15 +1,36 @@
 import React from 'react'
-import './Footer.scss'
+import './Resume.scss'
+import BiggerNav from '../../components/navbar/BiggerNav'
+import Footer from '../../components/footer/Footer'
+import arshResume from '../../assets/images/ArshResume.png'
 import Logo from '../../assets/images/CropmainLogo.png'
-import Contact from '../../Pages/contactPage/Contact'
 
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 
-function Footer() {
-    
+
+function Resume() {
   return (
-    <div className='Footer'>
+
+    
+    <div>
+        <BiggerNav/>
+
+<div className='resumePage'>
+<div className='resumeText'>
+    <p>Resume</p>
+</div>
+    <div className='lookTag'>
+    <p>Have A Look Will Ya!</p>
+    </div>
+<center>
+<img className='resumeIMG' src={arshResume}/>
+</center>
+</div>
+
+
+
+<div className='Footer'>
         <div className = 'mainFooter'>
 <div className='LogoSide'>
 <img className='footerLogo' src={Logo}/>
@@ -20,9 +41,9 @@ function Footer() {
 <div className='RedirectSide'>
 <p className='pageTitle'>Pages</p>
 <div className='redirectColumn'>
-<a className='redirectText' href=''>Portfolio</a>
-<a className='redirectText' href='#projectPage'>Projects</a>
-<Link className='redirectText' to='/resume'>Resume</Link>
+<Link to='/' className='redirectText' >Portfolio</Link>
+<Link to='/' className='redirectText' ><a href='#projectPage' className='redirectText'>Projects</a></Link >
+
 </div>
 </div>
 
@@ -45,8 +66,9 @@ function Footer() {
         </div>
 
     </div>
+    </div>
 
   )
 }
 
-export default Footer
+export default Resume

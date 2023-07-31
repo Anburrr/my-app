@@ -5,6 +5,9 @@ import Logo from "../../assets/images/CropmainLogo.png";
 import './Contact.scss'
 import { useState} from 'react';
 
+import {Link} from 'react-router-dom';
+
+
 
 
 function Contact() {
@@ -103,9 +106,9 @@ function Contact() {
 <div className='RedirectSide'>
 <p className='pageTitle'>Pages</p>
 <div className='redirectColumn'>
-<a className='redirectText' href=''>Portfolio</a>
-<a className='redirectText' href='#projectPage'>Projects</a>
-<a className='redirectText' href=''>Resume</a>
+<Link to='/' className='redirectText' >Portfolio</Link>
+<Link to='/' className='redirectText' ><a href='#projectPage' className='redirectText'>Projects</a></Link >
+<Link to='/resume' className='redirectText' href=''>Resume</Link>
 </div>
 </div>
 </div>

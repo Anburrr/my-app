@@ -26,7 +26,6 @@ function AnimCursor() {
 'textarea',
 'button',
 '.link'
-
    ]}
    />
    </>

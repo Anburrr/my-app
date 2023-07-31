@@ -76,7 +76,7 @@ p{
             height: 0.125rem;
             background: none;
             &::before {
-              position: absolute;
+              
               content: '';
               top: -0.25rem;
               right: 0.0625rem;
@@ -103,10 +103,12 @@ p{
         line-height: 1.6;
         text-align: center;
         text-transform: uppercase;
+        
       }
     }
     &:hover {
       .circle {
+        
         width: 100%;
         .icon {
           &.arrow {
