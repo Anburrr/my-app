@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import BiggerNav from '../../components/navbar/BiggerNav';
+import BiggerNav from '../../components/navbar/Navbar';
 import Logo from "../../assets/images/CropmainLogo.png";
 import './Contact.scss'
 import { useState} from 'react';

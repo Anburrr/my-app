@@ -1,6 +1,6 @@
 import React from 'react'
 import './Resume.scss'
-import BiggerNav from '../../components/navbar/BiggerNav'
+import BiggerNav from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import arshResume from '../../assets/images/ArshResume.png'
 import Logo from '../../assets/images/CropmainLogo.png'

@@ -5,12 +5,13 @@ import Twitter from "../../assets/images/twitter.png";
 import Github from "../../assets/images/github.png";
 import { Link } from "react-router-dom";
 
+
 function Intro() {
   return (
     <>
       <div class="intro" id="Intro">
         <div class="animation">
-          <p class="nameIntro">Hi my name is..</p>
+          <p class="nameIntro">Hi my name is...</p>
         </div>
 
         <div class="animation2">

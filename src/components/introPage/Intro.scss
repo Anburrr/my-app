@@ -5,20 +5,22 @@
     background-color: #0C0032;
     border-radius: 30px;
     padding: 20px;
+    
     }
 
 
     
     .nameIntro{
         font-size: 20px;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Audiowide';
         margin-bottom: 25px;
-        color: black;
+        color: white;
     }
     
     .typing{
        
         font-size: 70px;
+        font-family: 'Audiowide';
         font-weight: bold;
         color: #ccd6f6;
         margin: 0;
@@ -27,6 +29,7 @@
     
     .textIntro{
         font-size: 70px;
+        font-family: 'Audiowide';
         font-weight:bold;
         color: #8892af;
         margin: 0;
@@ -41,11 +44,12 @@
     
     .personInfo{
         color:white;
+        font-family: 'Oswald';
     }
     .animation p {
 
         width: 13ch;
-        border-right: 4px solid black;
+        border-right: 4px solid white;
         white-space: nowrap;
         overflow: hidden;
         animation: typing 1s steps(13, end), blink-caret 0.5s step-end infinite alternate;
@@ -63,7 +67,7 @@
 
     .animation2 p {
       width: 13ch;
-      border-right: 4px solid black;
+      border-right: 4px solid white;
       white-space: nowrap;
       overflow: hidden;
       animation-delay: -10s;
@@ -120,7 +124,7 @@
           font-size: 14px;
           padding: 20px;
           cursor: pointer;
-          font-family: 'Courier New', Courier, monospace, 10;
+          font-family: 'Days One';
           font-size: 15px;
           font-weight: 500;
           top: 0; left: 0;
@@ -134,6 +138,7 @@
       .btn-2::before {
         background-color: #3500d3;
         transition: 0.5s ease-out;
+        border-radius: 7.5px;
       }
       .btn-2 span {
         color: rgb(28, 31, 30);
@@ -152,7 +157,7 @@
       }
       .btn.hover-slide-right:hover::before {
         width: 100%;
-        border-radius: 7.5px;
+
       }
       
     
@@ -173,6 +178,7 @@
         height: 10px;
         width: 10px;
         transform: translate(-50%, -100%) rotate(45deg);
+
         border: 2px solid white;
         border-top: transparent;
         border-left: transparent;
@@ -230,18 +236,6 @@
    
     }
 
-    .IGPhoto{
-
-    }
-
-    .TTPhoto{
-
-    }
-
-    .GHPhoto{
-
-    }
-
     .icon-button:hover {
       filter: brightness(1.2);
     }
@@ -270,7 +264,7 @@
     }
 
     #socialIcons {
-      width: 30px;
+      width: 50px;
       height: auto;
       background-color: #484a4d;
       border-radius: 50%;
@@ -286,11 +280,10 @@
       width: 100%;
       display: flex;
       flex-direction: row;
+      gap: 10px;
      }
 
-    //  .Tag{
-    //   width: 100%;
-    //  }
+  
   
  
   

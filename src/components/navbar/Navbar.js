@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import logo from "../../assets/images/CropmainLogo.png";
 import Hamburger from "../../assets/images/hamburgerIcon.png";
+import HamburgerIcon from '../../assets/images/IconHamburger.png'
 import Instagram from "../../assets/images/instagram-logo.png";
 import { useState, useEffect, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
@@ -10,6 +11,9 @@ import Linkedin from "../../assets/images/linkedin.png"
 import Github from "../../assets/images/github.png"
 import linktree from "../../assets/images/linktree.png"
 import resume from "../../assets/images/resume.png"
+import HomeClip from '../../assets/images/homeClip.png'
+import pagesBack from '../../assets/images/pagesBack.png'
+
 
 import { BrowserRouter  as Router, Routes, Route, Link} from "react-router-dom";
 
@@ -24,7 +28,7 @@ function BiggerNav() {
               </Link>
 
 <Navbar>
-      <NavItem icon={Hamburger}>
+      <NavItem icon={HamburgerIcon}>
       <DropdownMenu/>
       </NavItem>
 </Navbar>
@@ -96,7 +100,7 @@ function DropdownMenu() {
         onEnter={calcHeight}>
         <div className="menu">
           <DropdownItem
-            leftIcon=<img className="resume" src={resume}/>
+            leftIcon=<img className="pages" src={pagesBack}/>
             goToMenu="settings">
            Pages
           </DropdownItem>
@@ -116,11 +120,12 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon= <img className="resume" src={resume}/>>
+          <DropdownItem goToMenu="main" leftIcon= <img className="resume" src={pagesBack}/>>
             <h2>Pages</h2>
           </DropdownItem>
-          <DropdownItem leftIcon =<img className="propIcon" src={Hamburger}/>><Link to='/resume'>My Resume</Link></DropdownItem>
-                <DropdownItem leftIcon =<img className="propIcon" src={Hamburger}/>><Link to='/'>Home</Link></DropdownItem>
+          <DropdownItem leftIcon =<img className="propIcon" src={HomeClip}/>><Link to='/'>Home</Link></DropdownItem>
+          <DropdownItem leftIcon =<img className="resumeProp" src={resume}/>><Link to='/resume'>My Resume</Link></DropdownItem>
+
       </div>
       </CSSTransition>
 
