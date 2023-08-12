@@ -1,18 +1,25 @@
-import React from "react";
 import "./Discovery.scss";
 import Experience from "../experience/Experience";
 import questionMark from "../../assets/images/questiongalaxy.jpeg";
+import React, { useEffect, useState, useContext } from "react";
 
 const experienceData = [
   { detail: <>Soon</> },
-  { detail: <>Soon</> },
-  { detail: <>Soon</> },
+  { detail: <>KT a FRUIT</> },
   { detail: <>Soon</> },
   { detail: <>Soon</> },
   { detail: <>Soon</> },
 ];
 
+
+
+
+
 function Discovery() {
+
+  const [imageShown, setImageShown] = useState(0)
+
+
   return (
     <div className="projectInfoBig">
       <div className="projectTitle">
@@ -23,18 +30,25 @@ function Discovery() {
       <lind className="introLine"></lind>
       <div className="projectInfo">
         <div className="imageContainer">
-          <img src={questionMark} />
+        {imageShown === 0 && <img src={questionMark}/>}
+          {imageShown === 1 && <img src={questionMark}/>}
+
+          {imageShown=== 2 && <img src={questionMark}/>}
+
+          {imageShown === 3 && <img src={questionMark}/>}
         </div>
 
         <div className="textContainer">
-          <Experience detail="sadasdadasdasd" />
-          <Experience detail="we done school G" />
-          <Experience />
-          <Experience />
-          <Experience />
-          <Experience />
-          <Experience />
-          <Experience />
+        {experienceData.map((d, i) => (
+            <Experience
+              key={i}
+              detail={d.detail}
+
+              onMouseOver={() => {
+                setImageShown(i)
+              }}
+            />
+          ))}
         </div>
       </div>
     </div>
