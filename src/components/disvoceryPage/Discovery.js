@@ -5,7 +5,7 @@ import React, { useEffect, useState, useContext } from "react";
 
 const experienceData = [
   { detail: <>Soon</> },
-  { detail: <>KT a FRUIT</> },
+  { detail: <>Test2</> },
   { detail: <>Soon</> },
   { detail: <>Soon</> },
   { detail: <>Soon</> },
@@ -17,7 +17,7 @@ const experienceData = [
 
 function Discovery() {
 
-  const [imageShown, setImageShown] = useState(0)
+  const [isShown, setIsShown] = useState("");
 
 
   return (
@@ -29,14 +29,7 @@ function Discovery() {
       </div>
       <lind className="introLine"></lind>
       <div className="projectInfo">
-        <div className="imageContainer">
-        {imageShown === 0 && <img src={questionMark}/>}
-          {imageShown === 1 && <img src={questionMark}/>}
 
-          {imageShown=== 2 && <img src={questionMark}/>}
-
-          {imageShown === 3 && <img src={questionMark}/>}
-        </div>
 
         <div className="textContainer">
         {experienceData.map((d, i) => (
@@ -44,12 +37,26 @@ function Discovery() {
               key={i}
               detail={d.detail}
 
-              onMouseOver={() => {
-                setImageShown(i)
-              }}
-            />
+              onMouseEnter={() => setIsShown(i)}
+              onMouseLeave={() => setIsShown("")}
+/>
+
+
           ))}
+
+{isShown && <img src={experienceData[isShown - 1]} alt={`isShown-${isShown}`} />}
         </div>
+
+        <div className="imageContainer">
+        {isShown === 0 && <img src={questionMark}/>}
+
+          {isShown === 1 && <img src={questionMark}/>}
+
+          {isShown=== 2 && <img src={questionMark}/>}
+
+          {isShown === 3 && <img src={questionMark}/>}
+        </div>
+
       </div>
     </div>
   );
