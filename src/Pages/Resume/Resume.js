@@ -21,8 +21,11 @@ function Resume() {
     <p>Resume</p>
 </div>
     <div className='lookTag'>
-    <p>Have A Look Will Ya!</p>
-    </div>
+      <center>
+    <p><Link to='/contact' className='contactID'>Contact</Link> Me If You Have Any Questions</p>
+    </center>
+   </div>
+    
 <center>
 <img className='resumeIMG' src={arshResume}/>
 </center>
@@ -30,7 +33,7 @@ function Resume() {
 
 
 
-<div className='Footer'>
+{/* <div className='Footer'>
         <div className = 'mainFooter'>
 <div className='LogoSide'>
 <img className='footerLogo' src={Logo}/>
@@ -65,7 +68,7 @@ function Resume() {
 </div>
         </div>
 
-    </div>
+    </div> */}
     </div>
 
   )

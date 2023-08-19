@@ -1,91 +1,92 @@
-.Footer{
+// .Footer{
 
-    width: 90%;
-    margin: 0 auto;
+//     width: 90%;
+//     margin: 0 auto;
 
-}
+// }
 
-.LogoSide{
-    width: 30%;
-}
+// .LogoSide{
+//     width: 30%;
+// }
 
-.mainFooter{
-    display: flex;
-    flex-direction:row ;
-    gap: 150px;
+// .mainFooter{
+//     display: flex;
+//     flex-direction:row ;
+//     gap: 150px;
 
 
-    padding: 150px;
-    background-color: rgb(170, 156, 156);
-    border-radius: 10px;
-}
+//     padding: 150px;
+//     background-color: rgb(170, 156, 156);
+//     border-radius: 10px;
+// }
 
-.footerLogo{
-    width: 85%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.legalRights{
-    font-size: 1.6vh;
-    opacity: 80%;
-    margin-top: 9px;
-}
-
-.bold{
-font-size: 1.6vh;
-font-weight: 700;
-}
-
-.madeBy{
-    font-size: 1.6vh;
-    margin-top: 7px;
-}
-
-.pageTitle{
-    text-decoration: underline;
-    font-size: 1.85vh;
+// .footerLogo{
+//     width: 85%;
+//     height: auto;
+//     margin-top: 20px;
     
-}
+// }
 
-.redirectColumn{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
+// .legalRights{
+//     font-size: 1.6vh;
+//     opacity: 80%;
+//     margin-top: 9px;
+// }
+
+// .bold{
+// font-size: 1.6vh;
+// font-weight: 700;
+// }
+
+// .madeBy{
+//     font-size: 1.6vh;
+//     margin-top: 7px;
+// }
+
+// .pageTitle{
+//     text-decoration: underline;
+//     font-size: 1.85vh;
+    
+// }
+
+// .redirectColumn{
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//     margin-top: 20px;
+// }
 
   
  
-.redirectText:hover {
+// .redirectText:hover {
  
-    font-size: 1.85vh;
-    color: white;
-  }
+//     font-size: 1.85vh;
+//     color: white;
+//   }
 
-.redirectText{
+// .redirectText{
 
-    font-size: 1.85vh;
-    color: white;
-    --b: 0.1em;   /* the thickness of the line */
-    --c: #33b4df; /* the color */
+//     font-size: 1.85vh;
+//     color: white;
+//     --b: 0.1em;   /* the thickness of the line */
+//     --c: #33b4df; /* the color */
     
-    color: #0000;
-    padding-block: var(--b);
-    background: 
-      linear-gradient(var(--c) 50%,rgb(255, 255, 255) 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
-    -webkit-background-clip: text,padding-box;
-            background-clip: text,padding-box;
-    transition: .5s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
-  }
+//     color: #0000;
+//     padding-block: var(--b);
+//     background: 
+//       linear-gradient(var(--c) 50%,rgb(255, 255, 255) 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+//       linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+//     -webkit-background-clip: text,padding-box;
+//             background-clip: text,padding-box;
+//     transition: .5s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+//   }
 
     
  
-  .redirectText:hover {
-    --_p: 100%;
-    color: var(--c);
-  }
+//   .redirectText:hover {
+//     --_p: 100%;
+//     color: var(--c);
+//   }
 
   .contactInfo{
     width: 100%;
@@ -104,7 +105,7 @@ font-weight: 700;
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-    
+
   }
 
   form input, form textarea{

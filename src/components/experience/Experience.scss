@@ -2,7 +2,10 @@
   font-family: "Days One";
   margin-left: auto;
   align-self: center;
-}
+
+@media (max-width:768px){
+font-size: 12px;
+}}
 
 a {
   margin: 0;
@@ -17,25 +20,7 @@ p {
   font-size: 2.25vh;
 }
 
-.button {
-  --b: 0.1em; /* the thickness of the line */
-  --c: #1095c1; /* the color */
 
-  color: #0000;
-  padding-block: var(--b);
-  background: linear-gradient(var(--c) 50%, #000 0) 0%
-      calc(100% - var(--_p, 0%)) / 100% 200%,
-    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b)
-      no-repeat;
-  -webkit-background-clip: text, padding-box;
-  background-clip: text, padding-box;
-  transition: 0.3s var(--_s, 0s) linear,
-    background-size 0.3s calc(0.3s - var(--_s, 0s));
-}
-.button:hover {
-  --_p: 100%;
-  --_s: 0.3s;
-}
 
 @mixin transition(
   $property: all,
@@ -60,6 +45,12 @@ button {
   &.learn-more {
     width: 12rem;
     height: auto;
+
+    @media (max-width: 768px) {
+      
+      width: 7rem;
+    }
+
     .circle {
       @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
       position: relative;
@@ -69,6 +60,10 @@ button {
       height: 3rem;
       background: blue;
       border-radius: 1.625rem;
+      @media (max-width: 768px) {
+      width: 2rem;
+      height: 2rem;
+      }
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
         position: absolute;
@@ -91,6 +86,9 @@ button {
             border-top: 0.125rem solid #fff;
             border-right: 0.125rem solid #fff;
             transform: rotate(45deg);
+            @media (max-width: 768px) {
+              right: 0.525rem;
+              }
           }
         }
       }

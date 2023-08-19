@@ -10,6 +10,7 @@ function Footer() {
     
   return (
     <div className='Footer'>
+  
         <div className = 'mainFooter'>
 <div className='LogoSide'>
 <img className='footerLogo' src={Logo}/>
@@ -28,16 +29,16 @@ function Footer() {
 
 <div className='SocialSide'>
 
-
 <p className='Text'>Want to Connect</p>
 
-<div id="container">
-  <button class="learn-more">
-    <span class="circle" aria-hidden="true">
-      <span class="icon arrow"></span>
+
+<div id="newContactContainer">
+  <button class="new-learn-more">
+    <span class="new-circle" aria-hidden="true">
+      <span class="new-icon new-arrow"></span>
     </span>
     <span>
-<Link to='/contact' className='contactText'>Contact Me</Link>
+      <Link to='/contact' className='new-contactText'>Contact Me</Link>
     </span>
   </button>
 </div>

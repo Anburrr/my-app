@@ -8,6 +8,8 @@
     
     }
 
+    
+
 
     
     .nameIntro{
@@ -15,6 +17,12 @@
         font-family: 'Audiowide';
         margin-bottom: 25px;
         color: white;
+
+        @media (max-width: 768px) {
+      
+          font-size: 17px;
+          margin-bottom: 15px;
+        }
     }
     
     .typing{
@@ -25,6 +33,12 @@
         color: #ccd6f6;
         margin: 0;
         margin-bottom: 10px;
+
+        @media (max-width: 768px) {
+      
+          font-size: 50px;
+         
+        }
     }
     
     .textIntro{
@@ -33,6 +47,13 @@
         font-weight:bold;
         color: #8892af;
         margin: 0;
+
+
+        @media (max-width: 768px) {
+      
+          font-size: 50px;
+         
+        }
     }
     
     .personInfo-div{
@@ -40,11 +61,23 @@
     width: 50%;
     font-size: 16px;
     line-height: 25px;
+
+    @media (max-width: 768px) {
+      
+      width: 75%;
+     
     }
+  }
     
     .personInfo{
         color:white;
         font-family: 'Oswald';
+
+        @media (max-width: 768px) {
+      
+          font-size: 16px;
+         
+        }
     }
     .animation p {
 
@@ -66,7 +99,7 @@
     }
 
     .animation2 p {
-      width: 13ch;
+      width: 8.5ch;
       border-right: 4px solid white;
       white-space: nowrap;
       overflow: hidden;
@@ -86,6 +119,10 @@
     
     .openContainer{
       margin-top: 110px;
+
+      @media (max-width:786px) {
+        margin-top:80px;
+      }
     }
     
     .container{
@@ -131,6 +168,13 @@
           transition: 0.5s;
           border-radius: 5px;
           width: 150px;
+
+          @media (max-width: 768px) {
+            font-size: 13px;
+            width: 100px;
+            padding: 18px;
+          }
+          
         }
       
       
@@ -274,6 +318,14 @@
       align-items: center;
       justify-content: center;
       transition: filter 300ms;
+
+
+      @media (max-width: 768px) {
+      
+        width: 35px;
+        height: auto;
+        justify-self: center;
+      }
     }
 
      .iconIMG{
@@ -281,6 +333,11 @@
       display: flex;
       flex-direction: row;
       gap: 10px;
+
+      @media (max-width: 768px) {
+      
+      gap: 5px;
+      }
      }
 
   

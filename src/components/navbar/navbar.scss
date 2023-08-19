@@ -29,7 +29,13 @@ position: fixed;
   position: fixed;
   height: 45px;
   margin-left: 10px;
-}
+  
+  @media (max-width:768px){
+    position: fixed;
+    height: 40px;
+    margin-left: 10px;
+    }}
+
 
 .textboxDiv{
   display: flex;

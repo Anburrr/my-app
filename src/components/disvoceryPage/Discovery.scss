@@ -4,6 +4,10 @@
     font-size: 5vh;
     animation: slide-left 5s;
     width: 100%;
+
+    @media (max-width:768px){
+      margin-top: 60px;
+    }
 }
 
 @keyframes slide-left {
@@ -70,4 +74,9 @@
   .projectTitle{
     width: 90%;
     margin: 0 auto;
+  }
+
+  .rotimoti{
+    width: 100%;
+    height: auto;
   }

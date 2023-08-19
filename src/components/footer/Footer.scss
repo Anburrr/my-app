@@ -1,5 +1,5 @@
 .Footer{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 
 }
@@ -8,21 +8,42 @@
     width: 30%;
 }
 
+.Footer{
+  background-color: #190061;
+  height: 500px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 .mainFooter{
     display: flex;
     flex-direction:row ;
-    gap: 150px;
+    width: 80%;
+    justify-content: space-evenly;
 
-
-    padding: 150px;
-    background-color: rgb(170, 156, 156);
-    border-radius: 10px;
+    @media (max-width: 768px) {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+      margin-left: 85px;
+    }
 }
 
 .footerLogo{
     width: 85%;
     height: auto;
     margin-top: 20px;
+
+    @media (max-width: 768px) {
+      
+      width: 200px;
+
+    }
 }
 
 .legalRights{
@@ -87,126 +108,167 @@ font-weight: 700;
   }
 
 
-  button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-    font-size: inherit;
-    font-family: inherit;
-    &.learnMore {
-      width: 12rem;
-      height: auto;
-      .circle {
-        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-        position: relative;
-        display: block;
-        margin: 0;
-        width: 3rem;
-        height: 3rem;
-        background: black;
-        border-radius: 1.625rem;
-        .icon {
-          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          margin: auto;
-          background: blue;
-          &.arrow {
-            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-            left: 0.625rem;
-            width: 1.125rem;
-            height: 0.125rem;
-            background: none;
-            &::before {
-              position: absolute;
-              content: '';
-              top: -0.25rem;
-              right: 0.0625rem;
-              width: 0.625rem;
-              height: 0.625rem;
-              border-top: 0.125rem solid #fff;
-              border-right: 0.125rem solid #fff;
-              transform: rotate(45deg);
-            }
-          }
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  
+  &.new-learn-more {
+    width: 12rem;
+    height: auto;
+    
+    @media (max-width: 768px) {
+      width: 14rem !important;
+    }
+    
+    .new-circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: blue;
+      border-radius: 1.625rem;
+      
+      @media (max-width: 768px) {
+        width: 2.5rem;
+        height: 2.5rem;
         }
-      }
-      .button-text {
+      .new-icon {
         @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
         bottom: 0;
-        padding: 0.75rem 0;
-        margin: 0 0 0 1.85rem;
-        color: white;
-        font-weight: 700;
-        line-height: 1.6;
-        text-align: center;
-        text-transform: uppercase;
-      }
-    }
-    &:hover {
-      .circle {
-        width: 100%;
-        .icon {
-          &.arrow {
-          background: white;
-          transform: translate(1rem, 0);
+        margin: auto;
+        background: blue;
+        
+        &.new-arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          
+          &::before {
+            position: absolute;
+            content: '';
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+            @media (max-width: 768px) {
+              right: 0.225rem;
+              }
           }
         }
       }
-      .button-text {
-        color: white;
-      }
+    }
+    
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: white;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Days One";
     }
   }
   
-
-    
-    #container {
-      grid-area: main;
-      align-self: center;
-      justify-self: center;
-    }
-
-
-  
- 
-      .redirectText:hover {
-        --_p: 100%;
-        color: var(--c);
+  &:hover {
+    .new-circle {
+      width: 100%;
+      
+      .new-icon {
+        &.new-arrow {
+          background: white;
+          transform: translate(1rem, 0);
+        }
       }
+    }
+    .button-text {
+      color: white;
+    }
+  }
+}
 
-      .contactText{
-        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 0.75rem 0;
-        margin-left: 30px;
-        color: white;
-        font-weight: 700;
-        line-height: 1.6;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.85vh;
-        text-decoration: underline;
-        font-family: 'Days One';
+#newContactContainer {
+  grid-area: main;
+  align-self: center;
+  justify-self: center;
+}
+
+.redirectText:hover {
+  --_p: 100%;
+  color: var(--c);
+}
+
+.new-contactText {
+  @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin-left: 40px;
+  color: white;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.75vh;
+  text-decoration: underline;
+  font-family: 'Days One';
+
+  @media (max-width:786px){
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0rem 0;
+    margin-left: 0px;
+    font-size: 1.65vh;
+    line-height: 2.1;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+
+      .connectingtext{
+        width: 100px;
       }
 
       .Text{
         margin-bottom: 30px;
         text-decoration: underline;
         font-size: 1.85vh;
+        @media (max-width:786px){
+          font-size: 1.85vh;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+
+      .SocialSide{
+        width: 100;
       }

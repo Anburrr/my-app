@@ -95,7 +95,7 @@ function Contact() {
 </div>
 
 
-    <div className='Footer'>
+    {/* <div className='Footer'>
         <div className = 'mainFooter'>
 <div className='LogoSide'>
 <img className='footerLogo' src={Logo}/>
@@ -112,7 +112,7 @@ function Contact() {
 </div>
 </div>
 </div>
-</div>
+</div> */}
 
     </>
   )
