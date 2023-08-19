@@ -65,7 +65,7 @@ font-weight: 700;
 .pageTitle{
     text-decoration: underline;
     font-size: 1.85vh;
-    
+    font-family: 'Audiowide';
 }
 
 .redirectColumn{
@@ -78,6 +78,7 @@ font-weight: 700;
 .redirectText{
     font-size: 1.85vh;
     color: white;
+    font-family: 'Days One';
 }
 
 .redirectText{
@@ -232,7 +233,7 @@ button {
   padding: 0.75rem 0;
   margin-left: 40px;
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
@@ -262,6 +263,7 @@ button {
         margin-bottom: 30px;
         text-decoration: underline;
         font-size: 1.85vh;
+        font-family: 'Audiowide';
         @media (max-width:786px){
           font-size: 1.85vh;
           overflow: hidden;

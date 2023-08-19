@@ -5,10 +5,10 @@ export default function Experience({ detail, handleMouseEnter, handleMouseLeave 
   const [isShown, setIsShown] = useState(false);
 
   return (
-    <div onMouseEnter={() => handleMouseEnter()} onMouseLeave={handleMouseLeave}>
+    <div>
       <div className="imageHover">
-        <div className={`hoverButton ${isShown ? "isShown" : ""}`}>
-        <button className="learn-more">
+        <div onMouseEnter={() => handleMouseEnter()} onMouseLeave={handleMouseLeave}>
+        <button className={`learn-more ${isShown ? "isShown" : ""}`}>
           <span className="circle" aria-hidden="true">
             <span className="icon arrow"></span>
           </span>

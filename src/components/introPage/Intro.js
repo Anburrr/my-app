@@ -3,6 +3,7 @@ import "./Intro.scss";
 import Instagram from "../../assets/images/instagram-logo.png";
 import Twitter from "../../assets/images/twitter.png";
 import Github from "../../assets/images/github.png";
+import reactIMG from '../../assets/images/1628058068206-removebg-preview.png'
 import { Link } from "react-router-dom";
 
 
@@ -33,6 +34,8 @@ function Intro() {
         </div>
 
         <div className="allButtons">
+
+          <div className="allInsideButtons">
           <div class="btn-holder">
             <button class="btn btn-2 hover-slide-right">
               <Link to="/contact">
@@ -52,6 +55,11 @@ function Intro() {
             <a className="Tag" href="https://github.com/Anburrr">
               <img id="socialIcons" className="GHPhoto" src={Github} />
             </a>
+          </div>
+        </div>
+
+        <div className="saturnDiv">
+              <img src={reactIMG} className="saturnIMG"/>
           </div>
         </div>
       </div>

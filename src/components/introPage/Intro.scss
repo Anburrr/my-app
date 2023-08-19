@@ -259,7 +259,17 @@
       text-align: left;
 
     }
+
+    .allButtons{
+      display: flex;
+      justify-content: space-between;
+    }
     
+    .saturnIMG{
+      width: 25%;
+      height: auto;
+    }
+
     .block{ 
       border-left: 3px solid black;
       height: 15px;
@@ -299,7 +309,7 @@
       border-radius: 10px;
     }
 
-    .allButtons{
+    .allInsideButtons{
       display: flex;
       flex-direction: row;
       gap: 10px;

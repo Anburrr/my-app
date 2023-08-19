@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Discovery.scss";
 import Experience from "../experience/Experience";
 import questionMark from "../../assets/images/questiongalaxy.jpeg";
+import naImage from "../../assets/images/errorPage.jpg"
 
 const experienceData = [
   { detail: <>Soon</> },
@@ -12,11 +13,11 @@ const experienceData = [
 ];
 
 const images = [
-  questionMark,
-  questionMark,
-  questionMark,
-  questionMark,
-  questionMark,
+  naImage,
+  naImage,
+  naImage,
+  naImage,
+  naImage,
 ];
 
 function Discovery() {
@@ -52,13 +53,15 @@ function Discovery() {
           ))}
         </div>
         <div className="imageContainer">
+          <div className="imageCenter">
           {imageShown !== null && (
             <img
               src={images[imageShown]}
               alt={`Image ${imageShown}`}
-              className="rotimoti"
+              className="imageDisplay"
             />
           )}
+          </div>
         </div>
       </div>
     </div>
