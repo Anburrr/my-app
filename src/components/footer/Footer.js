@@ -38,7 +38,7 @@ function Footer() {
       <span class="new-icon new-arrow"></span>
     </span>
     <span>
-      <Link to='/contact' className='new-contactText'>Contact Me</Link>
+      <Link to='/contact' className='new-contactText'>Contact</Link>
     </span>
   </button>
 </div>

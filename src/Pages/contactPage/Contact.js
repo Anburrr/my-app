@@ -84,7 +84,7 @@ function Contact() {
   
           />
           <center>
-          <div className="socialContainer" style={{ marginTop: "unset" }}>
+          <div className="sendContainer" style={{ marginTop: "unset" }}>
             <button className="contactBtn" type="submit" value="Send">
               Send
             </button>

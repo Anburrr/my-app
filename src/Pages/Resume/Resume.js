@@ -21,9 +21,9 @@ function Resume() {
     <p>Resume</p>
 </div>
     <div className='lookTag'>
-      <center>
-    <p><Link to='/contact' className='contactID'>Contact</Link> Me If You Have Any Questions</p>
-    </center>
+      
+    <p className='contactDiv'><Link to='/contact' className='contactID'>Contact</Link> Me If You Have Any Questions</p>
+    
    </div>
     
 <center>

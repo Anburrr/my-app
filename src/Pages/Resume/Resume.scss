@@ -10,6 +10,9 @@
       height: 800px;
     }
 
+    @media(max-width:520px){
+    height:600px;
+    }
 }
 
 .resumeText p {
@@ -40,28 +43,17 @@
     white-space: nowrap;
     overflow: hidden;
     animation: typing 1s steps(13, end), blink-caret 0.5s step-end infinite alternate;
-    margin-left: 30px;
-    margin-bottom: 10px;
     
+    margin-bottom: 10px;
 
     @media (max-width:768px){
       font-size: 20px;
-      margin-left: 0px;
+      margin-left: 30px;
       margin-bottom: 20px;
       width: 27ch;
 }
 }
-.lookTag p{
-    font-family: 'Days One';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 600;
-    color: black;
-    width: 30ch;
-    border-right: 4px solid black;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typing 1s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+.lookTag{
     margin-left: 30px;
     margin-bottom: 10px;
 
@@ -96,6 +88,26 @@
       width: 90%;
     }
 
+}
+
+.contactDiv{
+  font-family: 'Days One';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  color: black;
+  width: 27ch;
+  border-right: 4px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+
+  @media (max-width:768px){
+    font-size: 20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    width: 29ch;
+}
 }
 
 // .LogoSide{

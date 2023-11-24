@@ -32,6 +32,12 @@
       gap: 100px;
       margin-left: 85px;
     }
+    @media (max-width:520px){
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      gap: 60px;
+    }
 }
 
 .footerLogo{
@@ -44,22 +50,35 @@
       width: 200px;
 
     }
+    @media(max-width:520px){
+      width: 180px;
+    }
+
 }
 
 .legalRights{
     font-size: 1.6vh;
     opacity: 80%;
     margin-top: 9px;
+    @media(max-width:520px){
+     font-size: 1.4vh;;
+    }
 }
 
 .bold{
 font-size: 1.6vh;
 font-weight: 700;
+@media(max-width:520px){
+  font-size: 1.4vh;;
+ }
 }
 
 .madeBy{
     font-size: 1.6vh;
     margin-top: 7px;
+    @media(max-width:520px){
+      font-size: 1.4vh;;
+     }
 }
 
 .pageTitle{
@@ -79,6 +98,7 @@ font-weight: 700;
     font-size: 1.85vh;
     color: white;
     font-family: 'Days One';
+
 }
 
 .redirectText{
@@ -192,6 +212,8 @@ button {
       text-align: center;
       text-transform: uppercase;
       font-family: "Days One";
+
+
     }
   }
   
@@ -230,7 +252,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 0.75rem 0;
+  padding: 0.5rem 0;
   margin-left: 40px;
   color: white;
   font-weight: 500;
@@ -251,6 +273,11 @@ button {
     line-height: 2.1;
     text-align: center;
     font-weight: 600;
+  }
+
+  @media (max-width:520px) {
+        font-size: 2vh;
+        line-height: 3;
   }
 }
 

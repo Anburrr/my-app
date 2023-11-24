@@ -57,6 +57,20 @@
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas: "imageContainer imageContainer imageContainer textContainer textContainer";
+
+    @media(max-width:768px){
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "textContainer"
+          "imageContainer";
+      
+      
+    }
   
     .imageContainer {
       grid-area: imageContainer;
@@ -65,6 +79,13 @@
     .textContainer {
       grid-area: textContainer;
     }
+  }
+
+  .textContainer{
+    @media (max-width: 520px) {
+      width: 100%;
+    }
+    
   }
   
   .introLine{

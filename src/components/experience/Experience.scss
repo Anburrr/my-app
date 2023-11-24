@@ -3,9 +3,12 @@
   margin-left: auto;
   align-self: center;
 
-@media (max-width:768px){
-font-size: 12px;
-}}
+@media (max-width: 768px) {
+      
+  font-size: 16px;
+}
+
+}
 
 a {
   margin: 0;
@@ -46,10 +49,13 @@ button {
     width: 12rem;
     height: auto;
 
+
     @media (max-width: 768px) {
       
-      width: 7rem;
+      width: 12rem;
     }
+
+    
 
     .circle {
       @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
@@ -60,10 +66,12 @@ button {
       height: 3rem;
       background: blue;
       border-radius: 1.625rem;
+
       @media (max-width: 768px) {
-      width: 2rem;
-      height: 2rem;
-      }
+        width: 3rem;
+        height: 3rem;
+        }
+      
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
         position: absolute;
@@ -86,9 +94,9 @@ button {
             border-top: 0.125rem solid #fff;
             border-right: 0.125rem solid #fff;
             transform: rotate(45deg);
-            @media (max-width: 768px) {
-              right: 0.525rem;
-              }
+              @media (max-width: 768px) {
+                right: 0.0625rem;
+                }
           }
         }
       }
@@ -108,6 +116,7 @@ button {
       text-align: center;
       text-transform: uppercase;
       font-family: "Days One";
+
     }
   }
   &:hover {

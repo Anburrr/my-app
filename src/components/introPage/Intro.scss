@@ -6,6 +6,13 @@
     border-radius: 30px;
     padding: 20px;
     
+    @media (max-width: 768px) {
+    
+    }
+
+    @media(max-width: 520px){
+      width: 90% !important;
+    }
     }
 
     
@@ -23,6 +30,11 @@
           font-size: 17px;
           margin-bottom: 15px;
         }
+
+        @media(max-width: 520px){
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
     }
     
     .typing{
@@ -35,9 +47,11 @@
         margin-bottom: 10px;
 
         @media (max-width: 768px) {
-      
           font-size: 50px;
-         
+        }
+        @media (max-width: 520px) {
+          font-size: 40px;
+          margin-bottom: 5px !important;
         }
     }
     
@@ -54,6 +68,9 @@
           font-size: 50px;
          
         }
+        @media (max-width: 520px) {
+          font-size: 40px;
+        }
     }
     
     .personInfo-div{
@@ -67,6 +84,10 @@
       width: 75%;
      
     }
+
+    @media (max-width: 520px) {
+      width: 80%;
+    }
   }
     
     .personInfo{
@@ -78,6 +99,10 @@
           font-size: 16px;
          
         }
+        @media (max-width: 520px) {
+          font-size: 14px;
+        }
+        
     }
     .animation p {
 
