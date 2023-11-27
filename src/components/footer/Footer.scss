@@ -32,11 +32,11 @@
       gap: 100px;
       margin-left: 85px;
     }
-    @media (max-width:520px){
+    @media (max-width:600px){
       display: flex;
       flex-direction: column;
       width: 80%;
-      gap: 60px;
+      gap: 40px;
     }
 }
 
@@ -50,7 +50,7 @@
       width: 200px;
 
     }
-    @media(max-width:520px){
+    @media(max-width:600px){
       width: 180px;
     }
 
@@ -60,7 +60,7 @@
     font-size: 1.6vh;
     opacity: 80%;
     margin-top: 9px;
-    @media(max-width:520px){
+    @media(max-width:600px){
      font-size: 1.4vh;;
     }
 }
@@ -68,7 +68,7 @@
 .bold{
 font-size: 1.6vh;
 font-weight: 700;
-@media(max-width:520px){
+@media(max-width:600px){
   font-size: 1.4vh;;
  }
 }
@@ -76,7 +76,7 @@ font-weight: 700;
 .madeBy{
     font-size: 1.6vh;
     margin-top: 7px;
-    @media(max-width:520px){
+    @media(max-width:600px){
       font-size: 1.4vh;;
      }
 }
@@ -273,11 +273,6 @@ button {
     line-height: 2.1;
     text-align: center;
     font-weight: 600;
-  }
-
-  @media (max-width:520px) {
-        font-size: 2vh;
-        line-height: 3;
   }
 }
 

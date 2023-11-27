@@ -107,12 +107,12 @@ function DropdownMenu() {
           <DropdownItem
             leftIcon=<img className="pages" src={pagesBack}/>
             goToMenu="settings">
-           Pages
+           <a className="mainHeader">Pages</a>
           </DropdownItem>
           <DropdownItem
             leftIcon=<img className="linktree" src={linktree}/>
             goToMenu="animals">
-            My Links
+            <a className="mainHeader">My Links</a>
           </DropdownItem>
 
         </div>
@@ -125,9 +125,7 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon= <img className="resume" src={pagesBack}/>>
-            <h2>Pages</h2>
-          </DropdownItem>
+
           <DropdownItem leftIcon =<img className="propIcon" src={HomeClip}/>><Link to='/'>Home</Link></DropdownItem>
           <DropdownItem leftIcon =<img className="resumeProp" src={resume}/>><Link to='/resume'>My Resume</Link></DropdownItem>
 
@@ -141,13 +139,10 @@ function DropdownMenu() {
         unmountOnExit
         onEnter={calcHeight}>
         <div className="menu">
-          <DropdownItem goToMenu="main" leftIcon=<img className="linktree" src={linktree}/>>
-            <h2>My Links</h2>
-          </DropdownItem>
-          <DropdownItem leftIcon=<img className="propIcon" src={Instagram}/>><a href="https://www.instagram.com/">Instagram</a></DropdownItem>
-          <DropdownItem leftIcon=<img className="propIcon" src={Twitter}/>><a href="https://twitter.com/Anba786">Twitter</a></DropdownItem>
-          <DropdownItem leftIcon=<img className="github" src={Github}/>><a href="https://github.com/Anburrr"></a>Github</DropdownItem>
-          <DropdownItem leftIcon=<img className="linkedin" src={Linkedin}/>><a href="/"></a></DropdownItem>
+          <DropdownItem leftIcon=<img className="propIcon" src={Instagram}/>><a className="propText" href="https://www.instagram.com/">Instagram</a></DropdownItem>
+          <DropdownItem leftIcon=<img className="propIcon" src={Twitter}/>><a className="propText" href="https://twitter.com/Anba786">Twitter</a></DropdownItem>
+          <DropdownItem leftIcon=<img className="github" src={Github}/>><a className="propText" href="https://github.com/Anburrr"></a>Github</DropdownItem>
+          <DropdownItem leftIcon=<img className="linkedin" src={Linkedin}/>><a className="propText" href="/"></a></DropdownItem>
         </div>
       </CSSTransition>
     </div>

@@ -83,6 +83,7 @@ position: fixed;
 .propIcon{
   width: 100%;
   height: auto;
+
 }
 
 .linkedin{
@@ -123,6 +124,12 @@ nav{
   margin: 0px;
 }
 
+.mainHeader{
+  @media (max-width:768px) {
+    font-size: 20px;
+  }
+}
+
 /* Icon Button */
 .icon-button {
   --button-size: calc(var(--nav-size) * 0.5);
@@ -136,6 +143,17 @@ nav{
   align-items: center;
   justify-content: center;
   transition: filter 300ms;
+  @media (max-width:768px) {
+    --button-size: calc(var(--nav-size) * 0.4);
+    padding: 4px;
+
+  }
+}
+
+.igText{
+  @media(max-width:786px) {
+    font-size: 1.7vh;
+  }
 }
 
 
@@ -166,21 +184,20 @@ nav{
   margin-left: 200px;
 
   @media (max-width:768px) {
-    margin-left: 100px;
-    border: none;
+    margin-left: 130px;
+    margin-top: 60px;
+
   }
 
   @media (max-width:520px) {
     margin-left: 90px;
     padding: 0;
     border: none;
-    margin-top: 30px;
+    margin-top: 60px;
   }
 }
 
-.menu {
-  width: 100%;
-}
+
 
 
 
